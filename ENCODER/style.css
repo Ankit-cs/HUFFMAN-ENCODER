@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax {
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg4NzN8MHwxfGFsbHwxfHx8fHx8fHwxNjEyNTQ4NDE4&ixlib=rb-1.2.1&q=80&w=1080');
+    height: 500px; /* Height of parallax sections */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1; /* Ensure content is above the parallax background */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between elements */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    resize: none; /* Disable resizing */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+#frequencyDisplay, #codeDisplay, #encodingSteps, #decodingSteps {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240, 240, 240, 0.8);
+    margin-bottom: 20px;
+}
+
+/* Social Links Styles */
+.social-links {
+    margin-top: 20px;
+    text-align: center; /* Center the links */
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #3c67e3; /* Thinner border */
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+    margin: 5px; /* Spacing between buttons */
+    font-size: 16px; /* Font size adjustment */
+    background-color: #3c67e3; /* Background color */
+}
+
+.button:hover {
+    animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+    }
+}
+
+/* Copyright Styles */
+.copyright {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .content {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Adjust font size */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button text */
+    }
+
+    textarea {
+        font-size: 14px; /* Smaller text area font */
+    }
+
+    #frequencyChart {
+        width: 100%; /* Make chart full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
