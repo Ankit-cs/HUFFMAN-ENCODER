@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huffman Coding</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="parallax"></div>
+
+    <div class="content">
+        <h1>Huffman Coding Compression</h1>
+        <textarea id="inputText" placeholder="Enter text to encode..."></textarea>
+        <button id="encodeButton">Encode</button>
+        <h2>Encoded Text:</h2>
+        <textarea id="encodedText" readonly></textarea>
+        <button id="decodeButton">Decode</button>
+        <h2>Decoded Text:</h2>
+        <textarea id="decodedText" readonly></textarea>
+        <button id="uploadButton">Upload Text File</button>
+        <input type="file" id="fileInput" accept=".txt" style="display: none;"/>
+
+        <h2>Character Frequency:</h2>
+        <div id="frequencyDisplay"></div>
+
+        <h2>Huffman Codes:</h2>
+        <div id="codeDisplay"></div>
+
+        <h2>Encoding Steps:</h2>
+        <div id="encodingSteps"></div>
+
+        <h2>Decoding Steps:</h2>
+        <div id="decodingSteps"></div>
+
+        <canvas id="frequencyChart" width="400" height="200"></canvas>
+
+        <!-- LinkedIn and GitHub Links -->
+        <div class="social-links">
+            <h2>Connect with me:</h2>
+            <a href="https://www.linkedin.com/in/ankitkumaritsme/" target="_blank" class="button">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Ankit-cs" target="_blank" class="button">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="parallax"></div>
+
+    <!-- Copyright Section -->
+    <div class="copyright">
+        &copy; 2024 Ankit Kumar. All rights reserved.
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
